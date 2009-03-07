@@ -5,7 +5,7 @@ use strict;
 
 =head1 NAME
 
-Test::Phpt - The great new Test::Phpt!
+Test::Phpt - Understanding the PHP build test format
 
 =head1 VERSION
 
@@ -24,28 +24,22 @@ Perhaps a little code snippet.
 
     use Test::Phpt;
 
-    my $foo = Test::Phpt->new();
-    ...
+    phpt_file_ok('t/dummy.phpt');
 
 =head1 EXPORT
 
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
+phpt_file_ok() is exported.
 
 =head1 FUNCTIONS
 
-=head2 function1
+=head2 phpt_file_ok
+
+Testing a PHPT file.
 
 =cut
 
-sub function1 {
-}
-
-=head2 function2
-
-=cut
-
-sub function2 {
+sub phpt_file_ok {
+    # for now everything is OK
 }
 
 =head1 AUTHOR
@@ -57,8 +51,6 @@ Bernhard Schmalhofer, C<< <Bernhard.Schmalhofer at gmx.de> >>
 Please report any bugs or feature requests to C<bug-test-phpt at rt.cpan.org>, or through
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Test-Phpt>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
-
-
 
 
 =head1 SUPPORT
