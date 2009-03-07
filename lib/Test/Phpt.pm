@@ -2,6 +2,8 @@ package Test::Phpt;
 
 use warnings;
 use strict;
+use base 'Test::Builder::Module';
+
 
 =head1 NAME
 
@@ -32,6 +34,10 @@ phpt_file_ok() is exported.
 
 =head1 FUNCTIONS
 
+=cut
+
+my $CLASS = __PACKAGE__;
+
 =head2 phpt_file_ok
 
 Testing a PHPT file.
@@ -39,7 +45,13 @@ Testing a PHPT file.
 =cut
 
 sub phpt_file_ok {
-    # for now everything is OK
+    my ($phpt_fn) = @_;
+
+    my $test = 1;    # for now everything is OK
+
+    my $tb = $CLASS->builder();
+
+    return $tb->ok( $test, $phpt_fn );
 }
 
 =head1 AUTHOR
