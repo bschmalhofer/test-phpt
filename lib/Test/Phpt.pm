@@ -2,7 +2,6 @@ package Test::Phpt;
 
 use warnings;
 use strict;
-use base 'Test::Builder::Module';
 
 
 =head1 NAME
@@ -16,7 +15,6 @@ Version 0.01
 =cut
 
 our $VERSION = '0.01';
-
 
 =head1 SYNOPSIS
 
@@ -36,7 +34,11 @@ phpt_file_ok() is exported.
 
 =cut
 
+use base 'Exporter';
+use base 'Test::Builder::Module';
 my $CLASS = __PACKAGE__;
+
+our @EXPORT = qw(phpt_file_ok);
 
 =head2 phpt_file_ok
 
