@@ -5,6 +5,8 @@ Makefile.PL
 README
 lib/Test/Phpt.pm
 t/00-load.t
+t/perlcritic.t
+t/perlcriticrc
 t/perltidy.t
 t/pod-coverage.t
 t/pod.t
