@@ -3,7 +3,6 @@ package Test::Phpt;
 use warnings;
 use strict;
 
-
 =head1 NAME
 
 Test::Phpt - Understanding the PHP build test format

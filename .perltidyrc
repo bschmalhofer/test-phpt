@@ -7,4 +7,3 @@
 --no-space-for-semicolon
 --no-outdent-labels
 --no-blanks-before-comments
---maximum-consecutive-blank-lines=2 # Allow two blanks between subroutines
