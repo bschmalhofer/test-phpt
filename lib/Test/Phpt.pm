@@ -26,6 +26,10 @@ our $VERSION = '0.01';
 
 phpt_file_ok() is exported.
 
+=head1 DESCRIPTION
+
+See L<http://qa.php.net/write-test.php> and L<http://www.perl.com/pub/a/2005/12/08/test_files.htm>.
+
 =head1 FUNCTIONS
 
 =cut
@@ -61,7 +65,6 @@ Bernhard Schmalhofer, C<< <Bernhard.Schmalhofer at gmx.de> >>
 Please report any bugs or feature requests to C<bug-test-phpt at rt.cpan.org>, or through
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Test-Phpt>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
-
 
 =head1 SUPPORT
 
