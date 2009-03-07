@@ -28,7 +28,8 @@ phpt_file_ok() is exported.
 
 =head1 DESCRIPTION
 
-See L<http://qa.php.net/write-test.php> and L<http://www.perl.com/pub/a/2005/12/08/test_files.htm>.
+See L<http://qa.php.net/write-test.php>, L<http://qa.php.net/phpt_details.php>,
+and L<http://www.perl.com/pub/a/2005/12/08/test_files.htm>.
 
 =head1 FUNCTIONS
 
