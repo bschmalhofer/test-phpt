@@ -49,7 +49,7 @@ Testing a PHPT file.
 sub phpt_file_ok {
     my ($phpt_fn) = @_;
 
-    my $test = 1;    # for now everything is OK
+    my $test = -e $phpt_fn;    # for now only check existence of file
 
     my $tb = $CLASS->builder();
 

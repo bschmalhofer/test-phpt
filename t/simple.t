@@ -2,10 +2,23 @@ use Test::Builder::Tester tests => 1;
 use File::Spec ();
 use Test::Phpt;
 
-my @phpt_fns = qw( simple.phpt );
-foreach (@phpt_fns) {
-    my $phpt_path = File::Spec->catfile( 't', $_ );
-    test_out("ok 1 - $phpt_path");
+my @test_cases = (
+    {
+        fn             => 'simple_a.phpt',
+        is_successfull => 1,
+    },
+    {
+        fn             => 'simple_b.phpt',
+        is_successfull => 0,
+    },
+);
+my $cnt = 0;
+foreach (@test_cases) {
+    $cnt++;
+    my $expected = $_->{is_successfull} ? 'ok' : 'not ok';
+    my $phpt_path = File::Spec->catfile( 't', $_->{fn} );
+    test_out("$expected $cnt - $phpt_path");
+    test_fail(+1) unless $_->{is_successfull};
     phpt_file_ok($phpt_path);
-    test_test("$phpt_path reports success");
 }
+test_test("two files");
