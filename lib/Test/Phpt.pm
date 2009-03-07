@@ -18,10 +18,6 @@ our $VERSION = '0.01';
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
-
-Perhaps a little code snippet.
-
     use Test::Phpt;
 
     phpt_file_ok('t/dummy.phpt');
@@ -73,7 +69,6 @@ You can find documentation for this module with the perldoc command.
 
     perldoc Test::Phpt
 
-
 You can also look for information at:
 
 =over 4
@@ -96,9 +91,7 @@ L<http://search.cpan.org/dist/Test-Phpt/>
 
 =back
 
-
 =head1 ACKNOWLEDGEMENTS
-
 
 =head1 COPYRIGHT & LICENSE
 
@@ -106,7 +99,6 @@ Copyright 2009 Bernhard Schmalhofer, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
-
 
 =cut
 
